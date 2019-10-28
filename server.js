@@ -71,7 +71,7 @@ app.get("/blog-post?author=value", (req, res, next) => {
 		});
 	}
 	res.statusMessage = "Author was found";
-	return res.status().json(returnedObject);
+	return res.status().json(returnedPosts);
 });
 
 //add a new post
